@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><title >Insights will be right back</title>
+<meta charset="utf-8" />
+<title>Insights</title>
+<style type="text/css">
+
+
+
+body { font: 24px/1.3 verdana, arial, helvetica, sans-serif; }
+h1 { font-size:1.3em; }
+h2 { font-size:1.2em; }
+a:link { color:#33c; } 
+a:visited { color:#339; }
+p { max-width: 60em; }
+
+/* so linked image won't have border */
+a img { border:none; }
+</style>
+<script type="text/javascript">
+// place your images in this array
+var random_images_array = [
+'IMG_0008.jpeg','IMG_1813.jpeg','IMG_4428.jpeg','IMG_5455.jpeg','IMG_8936.jpeg',
+'IMG_0037.jpeg','IMG_1878.jpeg','IMG_4542.jpeg','IMG_5760.jpeg','IMG_8987.jpeg',
+'IMG_0122.jpeg','IMG_2781.jpeg','IMG_4641.jpeg','IMG_6813.jpeg','IMG_9238.jpeg',
+'IMG_0385.jpeg','IMG_2839.jpeg','IMG_4920.jpeg','IMG_7062.jpeg','IMG_9403.jpeg',
+'IMG_0707.jpeg','IMG_3234.jpeg','IMG_4942.jpeg','IMG_8841.jpeg','IMG_9944.jpeg',
+'IMG_1103.jpeg','IMG_4212.jpeg','IMG_5358.jpeg','IMG_8907.jpeg'
+];
+    
+function getRandomImage(imgAr, path) {
+    path = path || 'images/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "" width="50%" height="50%">';
+    document.write(imgStr); document.close();
+}
+
+</script>
+</head>
+<body>
+    
+<center><h1><bold>Insights is down for backup/upgrade</bold></h1></center>
+<center><h2>Please check the Matermost chatroom Insights to verify it is a planned outage.</h2></center>
+<center><p>In the mean time here is a random photo of Sheba and Shadow. </p></center>
+
+<div>
+    <!-- This script segment displays an image from the array -->
+<center><script type="text/javascript">getRandomImage(random_images_array, 'images/')</script></center>
+</div>
+
+<!-- or to have image linked: -->
+<!--<a href="."><script type="text/javascript">getRandomImage(random_images_array)</script></a>-->
+
+</body>
+</html>
