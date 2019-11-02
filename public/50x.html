@@ -30,7 +30,7 @@ function getRandomImage(imgAr, path) {
     path = path || 'images/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<img src="' + path + img + '" alt = "" width="50%" height="50%">';
+    var imgStr = '<img src="' + path + img + '" alt = "" width="25%" height="25%">';
     document.write(imgStr); document.close();
 }
 
@@ -40,15 +40,15 @@ function getRandomImage(imgAr, path) {
     <p></p>
 <center><h1><bold>Insights is down for backup/upgrade</bold></h1></center>
 <center><h2>Please check the Matermost chatroom Insights for the lastest information.</h2></center>
-<center><p>In the mean time here is a random photo of Sheba and Shadow. </p></center>>
+<center><p>In the mean time, enjoy a random kitten photo of Sheba and Shadow. </p></center>
 
 <div>
     <!-- This script segment displays an image from the array -->
-    <center><script type="text/javascript">getRandomImage(random_images_array, '/errorPages/')</script></center>
+    <center><script type="text/javascript">getRandomImage(random_images_array, '/')</script></center>
 </div>
 
 <!-- or to have image linked: -->
-<!--<a href="."><script type="text/javascript">getRandomImage(random_images_array)</script></a>-->
+<!-- <a href="."><script type="text/javascript">getRandomImage(random_images_array)</script></a> -->
 
 </body>
 </html>
